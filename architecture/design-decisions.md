@@ -42,7 +42,6 @@ OPNSense was chosen as the internal firewall with Suricata as the IDS/IPS and pr
 **Reasoning:**
 - Suricata is multi-threaded and handles east-west traffic inspection more efficiently than Snort in high-throughput internal environments
 - Suricata's protocol analysis capabilities (HTTP, DNS, TLS, SMB, HL7) are more relevant for detecting lateral movement and internal threats in a healthcare network
-- OPNSense has a cleaner plugin architecture for Suricata integration and more granular VLAN/interface management, making it better suited for internal segmentation
 - Using a different vendor and IDS engine at the internal layer adds another layer of vendor diversity
 
 ---
@@ -99,7 +98,8 @@ All log sources — both NDR sensors, both firewalls, the HoneyNet, and endpoint
 
 ## Current architecture diagram
 
-![Architecture diagram](diagram.png)
+<img width="5625" height="4959" alt="diagram1" src="https://github.com/user-attachments/assets/54d6c335-cbab-461d-abed-9187260f122a" />
+
 
 *Diagram will be updated as the lab progresses through each build phase.*
 
